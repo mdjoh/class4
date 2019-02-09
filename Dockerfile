@@ -6,5 +6,7 @@ RUN apt-get install -y python3-pip
 
 #RUN cat /etc/lsb/release
 
+# example copying file
+RUN mkdir -p /opt
 
-# Update to python 3. Install: pip. Then install numpy, pandas using pip
+COPY README.md /opt/README_new.md
