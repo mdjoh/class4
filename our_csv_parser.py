@@ -11,11 +11,12 @@ myfilename = "housing.data.txt"
 # else:
 #   print ('boo, no files for me')
 
-#homework 1
+# homework 1
+# start with empty list for cleaned values to concatenate to
 list1=[]
 
 # reach homework
-# start with blank lists for each to append to
+# start with empty lists for each to append to
 col1 = []
 col2 = []
 col3 = []
