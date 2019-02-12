@@ -35,7 +35,11 @@ with open(myfilename, 'r') as file_handle:
         values = line_clean.split(' ')
 
         # homework 1
-        values = [float(value) for value in values]
+        for value in values:
+            try:
+                int(value)
+            except:
+                float(value)
 
         print(values)
 
