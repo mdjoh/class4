@@ -2,12 +2,15 @@
 
 import os
 import numpy as np
+import argparse
 
 # homework 1
+# open diabetes data file
+myfilename = "diabetes_data.txt"
+
 # start with empty list for cleaned values to concatenate to
 list1=[]
 
-# reach homework
 # start with empty lists for each to append to
 col1 = []
 col2 = []
@@ -36,7 +39,6 @@ with open(myfilename, 'r') as file_handle:
 
         print(list1)
 
-    # reach homework
         # append elements to list of specified column
         col1.append(list1[0])
         col2.append(list1[1])
@@ -63,8 +65,10 @@ with open(myfilename, 'r') as file_handle:
     #print(col10)
     #print(col11)
 
+# put "cleaned" data in one array
 data = np.array([[col1], [col2], [col3], [col4], [col5], [col6], [col7], [col8], [col9], [col10], [col11]])
 
+# calculate and print means and std. devs
 means = np.mean(data, axis=0)
 stdevs = np.std(data, axis=0)
 
